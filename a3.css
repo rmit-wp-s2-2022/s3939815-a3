@@ -1,0 +1,128 @@
+img {
+    height: 4em;
+    vertical-align: middle;
+    float:right;
+}
+h1 {
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+header {
+    text-align: center;
+}
+nav li {
+    display:inline-block;
+    border: solid gold;
+    padding: 0.5em 1em;
+    background-color: lightyellow;
+    margin: 0.5em 1em;
+    box-shadow: red 0.2em 0.2em;
+    transition: width 2s;
+}
+nav li:hover {
+    width: 100px;
+    background-color: blue;
+}
+nav li a {
+    text-decoration: none;
+    transition: 2s;
+}
+nav li a:hover {
+    color: white;
+}
+div {
+    font-family: 'Courier New', Courier, monospace;
+}
+span {
+    color:blue;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+    gap: 10px;
+    background-color:red;
+}
+.grid-container header {
+    grid-area: header;
+    background-color:white;
+}
+.grid-container nav {
+    grid-area: nav;
+    background-color:white;
+}
+.grid-container main {
+    grid-area: main;
+    background-color:white;
+}
+.grid-container aside {
+    grid-area: aside;
+    background-color:white;
+}
+.grid-container footer {
+    grid-area: footer;
+    background-color:white;
+}
+video {
+    display: block;
+    padding: 20px;
+    border: 20px solid red;
+    box-sizing: border-box;
+}
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    background-color: blue;
+}
+.grid-container-1 header {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: white;
+}
+.grid-container-1 nav {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: white;
+}
+.grid-container-1 main {
+    grid-row-start: 3;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+}
+.grid-container-1 aside {
+    grid-row-start: 3;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: white;
+}
+.grid-container-1 footer {
+    grid-row: 8;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: white;
+}
+.main {
+    background-image: url("https://img.freepik.com/free-vector/gradient-pastel-sky-background_23-2148917404.jpg?t=st=1658831634~exp=1658832234~hmac=20e858239c99ab3c63159af14bc6899c14d66627cfd25aa2c696922733d15c80&w=1060");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+nav {
+    background: linear-gradient(blue, white);
+}
+.bold {
+    font-weight: 900;
+}
+label {
+    font-family: 'Roboto', sans-serif;
+}
